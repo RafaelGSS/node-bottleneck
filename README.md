@@ -3,6 +3,8 @@ Web application with bottleneck for you play with profiling tools
 
 ## V1
 
+Results
+
 ```
 Running 10s test @ http://localhost:3000
 10 connections
@@ -47,6 +49,7 @@ Diff:
 +   }
 + }
 
+- app.get('/', (req, res) => {
 + app.get('/', schema, (req, res) => {
   res.send('ok')
 })

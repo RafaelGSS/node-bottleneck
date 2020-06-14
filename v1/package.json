@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:cdt": "node --inspect=0.0.0.0 index.js",
+    "start:perf": "node --perf-basic-prof-only-functions index.js &"
   },
   "keywords": [],
   "author": "",
